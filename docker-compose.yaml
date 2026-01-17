@@ -1,0 +1,10 @@
+services:
+  ingest-data:
+    build:
+      context: ./ingestion
+    container_name: finance_ingestion
+    env_file: .env
+    volumes:
+      - ./config/sa_key.json:/app/config/sa_key.json
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/app/config/sa_key.json
