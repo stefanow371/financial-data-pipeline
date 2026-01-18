@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: fct_monthly_burn
+    columns:
+      - name: mom_pct_change

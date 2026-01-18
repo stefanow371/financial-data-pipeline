@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: finance_raw_data
+    database: finance-data-pipeline-484612
+    schema: finance_raw
+    tables:
+      - name: transactions
