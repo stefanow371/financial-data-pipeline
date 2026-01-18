@@ -1,8 +1,11 @@
-setup:
-	docker compose up -d --build
+build:
+	docker compose build
+
+start:
+	docker compose up -d
 
 run:
-	docker compose exec ingest-data python scripts/ingest_data.py
+	docker compose exec ingest-data poetry run python -m script.main
 
 stop:
 	docker compose down
@@ -10,7 +13,6 @@ stop:
 shell:
 	docker compose exec ingest-data /bin/bash
 
-	# Aktualizuje wszystkie paczki do najnowszych wersji zgodnych z pyproject.toml
 poetry-update:
 	docker compose exec ingest-data poetry update
 
