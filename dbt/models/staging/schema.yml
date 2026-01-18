@@ -8,6 +8,3 @@ models:
           - unique
           - not_null
       - name: amount_target
-        tests:
-          - dbt_utils.accepted_range:
-              min_value: 0

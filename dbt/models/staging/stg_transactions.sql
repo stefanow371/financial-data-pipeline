@@ -1,5 +1,5 @@
 with
-    source as (select * from {{ source("finance_raw", "transactions") }}),
+    source as (select * from {{ source("finance_raw_data", "transactions") }}),
 
     renamed as (
         select
