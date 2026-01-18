@@ -1,14 +1,12 @@
 [tool.poetry]
 name = "finance-ingestion"
 version = "0.1.0"
-description = "Professional financial data ingestion pipeline"
-authors = ["Stefanow <you@example.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 pandas = "^2.2.0"
 google-cloud-bigquery = "^3.15.0"
-pandas-gbq = "^0.20.0"
+pandas-gbq = "^0.26.1"
 faker = "^22.0.0"
 python-dotenv = "^1.0.0"
 db-dtypes = "^1.2.0"

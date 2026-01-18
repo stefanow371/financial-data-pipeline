@@ -6,5 +6,3 @@ services:
     env_file: .env
     volumes:
       - ./config/sa_key.json:/app/config/sa_key.json
-    environment:
-      - GOOGLE_APPLICATION_CREDENTIALS=/app/config/sa_key.json
